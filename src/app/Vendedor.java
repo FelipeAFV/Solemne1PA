@@ -9,7 +9,7 @@ package app;
  *
  * @author f_fig
  */
-public class Vendedor extends Empleado {
+public class Vendedor extends Empleado implements TrabajadorSueldoVariable {
     
     private String area_asignada;
     private int ventas_mes;
@@ -21,7 +21,7 @@ public class Vendedor extends Empleado {
         this.ventas_mes = ventas_mes;
     }
 
-    public double get_sueldo_final() {
+    public double sueldo_final() {
         return get_sueldo_base() + ventas_mes*10000;
     }
 
@@ -48,9 +48,10 @@ public class Vendedor extends Empleado {
     
     @Override
     public String toString() {
-        return super.toString() + "\n[Vendedor : Sueldo final: "+ get_sueldo_final() + 
+        return super.toString() + "\n[Vendedor : Sueldo final: "+ sueldo_final() + 
                 " Area asignada: "+ area_asignada +
-                " Ventas mensuales: " + ventas_mes+ "]";
+                " Ventas mensuales: " + ventas_mes+ "]"
+                + "\n" + "----------------------------------------------------";
     }
      
 }

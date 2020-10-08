@@ -28,7 +28,8 @@ public class Administrativo extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString() + "\nAdministrativo[" + "cargo: " + cargo + ']';
+        return super.toString() + "\nAdministrativo[" + "cargo: " + cargo + ']'
+                + "\n" + "----------------------------------------------------";
     }
 
 }

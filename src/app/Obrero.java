@@ -9,7 +9,7 @@ package app;
  *
  * @author f_fig
  */
-public class Obrero extends Empleado {
+public class Obrero extends Empleado implements TrabajadorSueldoVariable {
 
     private double multiplicador_turno;
     private double horas_extra;
