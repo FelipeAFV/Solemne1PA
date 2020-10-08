@@ -9,6 +9,14 @@ package app;
  *
  * @author f_fig
  */
-public class Gerente {
+public class Gerente extends Administrativo {
+
+    public Gerente(String rut, String nombre, double sueldo_base, String cargo) {
+        super(rut, nombre, sueldo_base, cargo);
+    }
+    
+    /*public boolean autorizar_pago() {
+        
+    }*/
     
 }

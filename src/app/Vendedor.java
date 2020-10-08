@@ -21,24 +21,23 @@ public class Vendedor extends Empleado {
         this.ventas_mes = ventas_mes;
     }
 
-    @Override
-    public double getSueldo_base() {
-        return super.getSueldo_base() + ventas_mes*10000;
+    public double get_sueldo_final() {
+        return get_sueldo_base() + ventas_mes*10000;
     }
 
-    public String getArea_asignada() {
+    public String get_area_asignada() {
         return area_asignada;
     }
 
-    public void setArea_asignada(String area_asignada) {
+    public void set_area_asignada(String area_asignada) {
         this.area_asignada = area_asignada;
     }
 
-    public int getVentas_mes() {
+    public int get_ventas_mes() {
         return ventas_mes;
     }
 
-    public void setVentas_mes(int ventas_mes) {
+    public void set_ventas_mes(int ventas_mes) {
         this.ventas_mes = ventas_mes;
     }
     

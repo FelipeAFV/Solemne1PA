@@ -19,11 +19,11 @@ public class Administrativo extends Empleado {
         this.cargo = cargo;
     }
 
-    public String getCargo() {
+    public String get_cargo() {
         return cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void set_cargo(String cargo) {
         this.cargo = cargo;
     }
     

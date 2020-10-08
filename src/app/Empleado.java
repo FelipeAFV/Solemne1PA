@@ -31,43 +31,43 @@ public abstract class Empleado {
         this.sueldo_base = sueldo;
     }
 
-    public String getRut() {
+    public String get_rut() {
         return rut;
     }
 
-    public void setRut(String rut) {
+    public void set_rut(String rut) {
         this.rut = rut;
     }
 
-    public String getNombre() {
+    public String get_nombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void set_nombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
+    public String get_apellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
+    public void set_apellido(String apellido) {
         this.apellido = apellido;
     }
 
-    public String getNivel_educativo() {
+    public String get_nivel_educativo() {
         return nivel_educativo;
     }
 
-    public void setNivel_educativo(String nivel_educativo) {
+    public void set_nivel_educativo(String nivel_educativo) {
         this.nivel_educativo = nivel_educativo;
     }
 
-    public double getSueldo_base() {
+    public double get_sueldo_base() {
         return sueldo_base;
     }
 
-    public void setSueldo_base(double sueldo_base) {
+    public void set_sueldo_base(double sueldo_base) {
         this.sueldo_base = sueldo_base;
     }
 

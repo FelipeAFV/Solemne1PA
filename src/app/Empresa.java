@@ -12,22 +12,21 @@ import java.util.LinkedList;
  * @author f_fig
  */
 public class Empresa {
+
     LinkedList<Vendedor> vendedores;
     LinkedList<Administrativo> administrativos;
     LinkedList<Obrero> obreros;
-    LinkedList<ResponsableRRHH> rec_humanos;
+    ResponsableRRHH rec_humanos;
     Gerente gerente;
 
     public Empresa() {
         this.vendedores = new LinkedList<>();
         this.administrativos = new LinkedList<>();
         this.obreros = new LinkedList<>();
-        this.rec_humanos = new LinkedList<>();
     }
-    
+
     public static void main(String[] args) {
-        
+   
     }
-    
-    
+
 }
