@@ -10,14 +10,14 @@ package app;
  * @author f_fig
  */
 public abstract class Empleado {
-    
+
     private String rut;
     private String nombre;
     private String apellido;
     private String nivel_educativo;
     private double sueldo_base;
-    
-    public Empleado(String rut, String nombre,double sueldo) {
+
+    public Empleado(String rut, String nombre, double sueldo) {
         this.rut = rut;
         this.nombre = nombre;
         this.sueldo_base = sueldo;
@@ -71,10 +71,10 @@ public abstract class Empleado {
         this.sueldo_base = sueldo_base;
     }
 
+    @Override
+    public String toString() {
+        return "Rut: " + rut + "\nNombre: " + nombre + "\nApellido: " + apellido + "\nNivel Educativo: " + nivel_educativo
+                + "\nSueldo Base: " + sueldo_base;
+    }
 
-
-   
-    
-    
-    
 }

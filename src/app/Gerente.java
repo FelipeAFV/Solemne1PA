@@ -15,8 +15,8 @@ public class Gerente extends Administrativo {
         super(rut, nombre, sueldo_base, cargo);
     }
     
-    /*public boolean autorizar_pago() {
-        
-    }*/
+    public void autorizar_pago() {
+        //Se autoriza el pago de una nómina
+    }
     
 }

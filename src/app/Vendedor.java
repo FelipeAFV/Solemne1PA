@@ -40,6 +40,13 @@ public class Vendedor extends Empleado {
     public void set_ventas_mes(int ventas_mes) {
         this.ventas_mes = ventas_mes;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n[Vendedor : Sueldo final: "+ get_sueldo_final() + " Area asignada: "+ area_asignada +
+                " Ventas mensuales: " + ventas_mes+ "]";
+    }
+    
     
     
 }

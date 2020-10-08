@@ -64,4 +64,8 @@ public class ResponsableRRHH extends Administrativo {
                 break;
         }
     }
+    
+    public void generarNomina() {
+        //se genera la nomina para el pago de sueldos
+    }
 }
