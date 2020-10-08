@@ -15,57 +15,17 @@ public class ResponsableRRHH extends Administrativo {
         super(rut, nombre, sueldo_base, cargo);
     }
 
-    public void modificar_administrativos(int accion, Empresa empresa, Empleado emp) {
+    public void agregar_administrativos(Empresa empresa, Empleado emp) {
+        empresa.administrativos.add((Administrativo) emp);
+    }
+    public void modificar_administrativos(Empresa empresa, String rut, int accion) {
         switch (accion) {
             case 0:
+                //Eliminar
                 break;
             case 1:
-                break;
-            case 2:
-                break;
-            case 3:
+                //Modificar
                 break;
         }
     }
-
-    public void modificar_vendedores(int accion, Empresa empresa, Empleado emp) {
-        switch (accion) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-        }
-    }
-
-    public void modificar_obreros(int accion, Empresa empresa, Empleado emp) {
-        switch (accion) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-        }
-    }
-    
-    public void modificar_RRHH(int accion, Empresa empresa, Empleado emp) {
-        switch (accion) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-        }
-    }
-
-
 }
