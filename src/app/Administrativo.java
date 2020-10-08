@@ -9,9 +9,23 @@ package app;
  *
  * @author f_fig
  */
-public class Administrativo {
+public class Administrativo extends Empleado {
     
-    private int cantidad_certificados;
+    
     private String cargo;
+    
+    public Administrativo(String rut, String nombre, double sueldo_base, String cargo) {
+        super(rut, nombre, sueldo_base);
+        this.cargo = cargo;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+    
     
 }
