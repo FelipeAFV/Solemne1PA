@@ -23,11 +23,11 @@ public abstract class Empleado {
         this.sueldo_base = sueldo;
     }
 
-    public Empleado(String rut, String nombre, String apellido, String nive_educativo, double sueldo) {
+    public Empleado(String rut, String nombre, String apellido, String nivel_educativo, double sueldo) {
         this.rut = rut;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.nivel_educativo = nive_educativo;
+        this.nivel_educativo = nivel_educativo;
         this.sueldo_base = sueldo;
     }
 

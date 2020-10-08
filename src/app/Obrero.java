@@ -48,7 +48,10 @@ public class Obrero extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString() + "\nObrero[" + "multiplicador_turno: " + multiplicador_turno + ", horas_extra: " + horas_extra + "tipo_turno: " + tipo_turno + ']';
+        return super.toString() + "\nObrero[sueldo final: " + sueldo_final()
+                + ", multiplicador_turno: " + multiplicador_turno + ", horas_extra: "
+                + horas_extra + " tipo_turno: " + tipo_turno + ']'
+                + "\n" + "----------------------------------------------------";
     }
 
 }
