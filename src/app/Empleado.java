@@ -9,26 +9,26 @@ package app;
  *
  * @author f_fig
  */
-public class Empleado {
+public abstract class Empleado {
     
     private String rut;
     private String nombre;
     private String apellido;
-    private String niveEducativo;
-    private double sueldo;
+    private String nivel_educativo;
+    private double sueldo_base;
     
     public Empleado(String rut, String nombre,double sueldo) {
         this.rut = rut;
         this.nombre = nombre;
-        this.sueldo = sueldo;
+        this.sueldo_base = sueldo;
     }
 
-    public Empleado(String rut, String nombre, String apellido, String niveEducativo, double sueldo) {
+    public Empleado(String rut, String nombre, String apellido, String nive_educativo, double sueldo) {
         this.rut = rut;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.niveEducativo = niveEducativo;
-        this.sueldo = sueldo;
+        this.nivel_educativo = nive_educativo;
+        this.sueldo_base = sueldo;
     }
 
     public String getRut() {
@@ -55,21 +55,25 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public String getNiveEducativo() {
-        return niveEducativo;
+    public String getNivel_educativo() {
+        return nivel_educativo;
     }
 
-    public void setNiveEducativo(String niveEducativo) {
-        this.niveEducativo = niveEducativo;
+    public void setNivel_educativo(String nivel_educativo) {
+        this.nivel_educativo = nivel_educativo;
     }
 
-    public double getSueldo() {
-        return sueldo;
+    public double getSueldo_base() {
+        return sueldo_base;
     }
 
-    public void setSueldo(double sueldo) {
-        this.sueldo = sueldo;
+    public void setSueldo_base(double sueldo_base) {
+        this.sueldo_base = sueldo_base;
     }
+
+
+
+   
     
     
     
